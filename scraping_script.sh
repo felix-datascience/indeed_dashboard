@@ -12,7 +12,7 @@ DateStart=$"$YearStart-$MonthStart-$DayStart"
 TimeStampStart=$"[$DateStart $HourStart:$MinuteStart:$SecondStart]"
 
 ProjectRootFolder=$"/home/pi/indeed_dashboard_deployed"
-ScraperFolder=$"/home/pi/indeed_dashboard/scraper"
+ScraperFolder=$"/home/pi/indeed_dashboard_tools/scraper"
 DataFolder=$"$ProjectRootFolder/data"
 FileName=$"$DataFolder/$YearStart-$MonthStart-$DayStart.json"
 
