@@ -38,6 +38,7 @@ cd $ProjectRootFolder
 # Add new file to stage area, commit and push to GitHub repository
 CommitMessage=$"Automatic commit: Add scraped date from $DateStart"
 #CommitMessage=$"Data pipeline test run $TimeStampStart"
+git pull
 git add .
 git commit -m "$CommitMessage"
 git push
