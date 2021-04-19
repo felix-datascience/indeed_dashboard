@@ -69,7 +69,7 @@ class JobSpider(scrapy.Spider):
                 'description': ''.join(job.xpath('.//div[@class="summary"]/ul/li//text()').getall()),
 
                 # use get_date function to turn age string into format "yyyy-mm-dd"
-                'date': get_date(job.xpath('.//span[@class="date "]/text()').get()),
+                'date': get_date(job.xpath('.//span[@class="date date-a11y"]/text()').get()),
             }
         next_page = response.xpath('.//nav//a[@aria-label="Weiter"]/@href').get()
         if next_page is not None:
